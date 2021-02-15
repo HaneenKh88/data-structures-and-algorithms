@@ -31,6 +31,14 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 
 const addExclamation = (arr) => {
   // Solution code here...
+  let NewArr = [];
+  arr.forEach(val => {
+    NewArr.push(val+ '!');
+
+  
+  });
+
+  return NewArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -43,6 +51,14 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 
 const allUpperCase = (arr) => {
   // Solution code here...
+  
+  let NewArr = [];
+  arr.forEach(val => {
+  NewArr.push(val.toUpperCase());
+
+  });
+
+  return NewArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -57,16 +73,16 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 
 const greeting = (word) => {
   // Solution code here...
-  word = word + '!';
-  return word.toUppercase();
+  
+  return word.toUpperCase() + '!';
 };
 
 const speaker = (words, callback) => {
   // Solution code here...
   let NewArr = [];
   words.forEach(val => {
-    NewArr.push(callback(val))
-  })
+    NewArr.push(callback(val));
+  });
   return NewArr;
 };
 
@@ -88,10 +104,17 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
+  arr.push(value);
+
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+  for (let i = 0; i < times; i++) {
+    callback(arr,num);
+    
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -114,6 +137,15 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
+
+  let inventory = [];
+  availableItems.forEach(val => {
+    if(val.available)
+      {
+        inventory.push(val.name);
+      }
+  });
+  return inventory;
 };
 
 /* ------------------------------------------------------------------------------------------------
