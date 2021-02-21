@@ -119,7 +119,7 @@ const sortByPrice = (arr) => {
   // Solution code here...
   arr.sort((a, b) => {
     return a.price - b.price;
-  });
+  })
   return arr;
 
 };
