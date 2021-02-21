@@ -1,3 +1,6 @@
+/* eslint-disable semi */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-trailing-spaces */
 'use strict';
 
 /* ------------------------------------------------------------------------------------------------
@@ -80,7 +83,7 @@ const sortBackwards = (arr) => {
       return -1;
     }
   })
-    return arr;
+  return arr;
   
 };
 
@@ -116,7 +119,7 @@ const sortByPrice = (arr) => {
   // Solution code here...
   arr.sort((a, b) => {
     return a.price - b.price;
-  })
+  });
   return arr;
 
 };
