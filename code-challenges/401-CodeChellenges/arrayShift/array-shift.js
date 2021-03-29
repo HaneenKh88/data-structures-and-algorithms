@@ -1,22 +1,16 @@
-/* eslint-disable no-unused-vars */
-'use strict';
+/* eslint-disable eol-last */
+module.exports = function insertShiftArray(array, value) {
+  let middlenum = array.length / 2;
+  let newArr = [];
 
-
-module.exports = function ShiftArray(Array,Value) {
-  let MiddleArr = Array.length/2;
-  let NewArr = [];
-
-  for (let i = 0; i <= Array.length; i++) {
-    if(i === MiddleArr)
-    {
-      NewArr.push(Value);
-      NewArr.push(Array[i]);
-    }
-
-    else
-    {
-      NewArr.push(Array[i]);
+  for (let i = 0; i < array.length; i++) {
+    middlenum = Math.ceil(middlenum);
+    if (i === middlenum) {
+      newArr.push(value);
+      newArr.push(array[i]);
+    } else {
+      newArr.push(array[i]);
     }
   }
-  return NewArr;
+  return newArr;
 };
