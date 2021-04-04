@@ -28,6 +28,13 @@ Create a linked list class with its properties and methods with its tests.
 5. Create Insertbefore method to add the node before a specific node.
 6. Create Insertafter method to add the node after a specific node.
 
+***********************************************************************************************
+
+
+## White Board Image:
+
+![Whiteboard Image for Code Challenge 1](https://github.com/HaneenKh88/data-structures-and-algorithms/blob/main/code-challenges/401-CodeChellenges/assests/LinkedList.png)
+
 
 ***********************************************************************************************
 ### Pull Request Link
