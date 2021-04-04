@@ -94,6 +94,59 @@ describe('Testing For Code Chellenge 4 Linked List', () => {
 
 
   });
+  it('add a node to the end of the linked list', () => {
+    const linkedlist = new LinkedList();
+    linkedlist.insert('haneen');
+    linkedlist.append('faten');
+    expect(linkedlist.toString()).toStrictEqual('{haneen} ->{faten} ->null');
+  });
 
+  it('add multiple nodes to the end of a linked list', () => {
+    const linkedlist = new LinkedList();
+    linkedlist.insert('haneen');
+    linkedlist.append('faten');
+    linkedlist.append('raghad');
+    expect(linkedlist.toString()).toStrictEqual('{haneen} ->{faten} ->{raghad} ->null');
+  });
+
+  it('add multiple nodes to the end of a linked list', () => {
+    const linkedlist = new LinkedList();
+    linkedlist.insert('haneen');
+    linkedlist.append('faten');
+    linkedlist.append('raghad');
+    linkedlist.insertBefore('raghad','Amani');
+
+    expect(linkedlist.toString()).toStrictEqual('{haneen} ->{faten} ->{Amani} ->{raghad} ->null');
+  });
+
+  it('add multiple nodes to the end of a linked list', () => {
+    const linkedlist = new LinkedList();
+    linkedlist.insert('haneen');
+    linkedlist.insert('faten');
+    linkedlist.insert('raghad');
+    linkedlist.insertBefore('haneen','Amani');
+
+    expect(linkedlist.toString()).toStrictEqual('{Amani} ->{haneen} ->{faten} ->{raghad} ->null');
+  });
+
+  it(' insert after a node in the middle of the linked list', () => {
+    const linkedlist = new LinkedList();
+    linkedlist.insert('haneen');
+    linkedlist.append('faten');
+    linkedlist.append('raghad');
+    linkedlist.insertAfter('faten','Amani');
+
+    expect(linkedlist.toString()).toStrictEqual('{haneen} ->{faten} ->{Amani} ->{raghad} ->null');
+  });
+
+  it(' insert after a node in the middle of the linked list', () => {
+    const linkedlist = new LinkedList();
+    linkedlist.insert('haneen');
+    linkedlist.append('faten');
+    linkedlist.append('raghad');
+    linkedlist.insertAfter('raghad','Amani');
+
+    expect(linkedlist.toString()).toStrictEqual('{haneen} ->{faten} ->{raghad} ->{Amani} ->null');
+  });
 
 });
