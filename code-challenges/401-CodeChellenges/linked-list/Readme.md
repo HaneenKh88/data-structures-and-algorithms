@@ -21,7 +21,7 @@ Create a linked list class with its properties and methods with its tests.
 
 ### API
 
-1.Create a Node class contain the value of the node and its next node which is null.
+1. Create a Node class contain the value of the node and its next node which is null.
 2. Create linked list class with head value to can be add the nodes to the head of the list.
 3. Create includes method that search for a specific node value and return true if its exixts or false if its not exists.
 4. Create append method to add the node after the head.
