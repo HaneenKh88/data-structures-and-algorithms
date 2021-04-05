@@ -149,4 +149,55 @@ describe('Testing For Code Chellenge 4 Linked List', () => {
     expect(linkedlist.toString()).toStrictEqual('{haneen} ->{faten} ->{raghad} ->{Amani} ->null');
   });
 
+  it('Where k is greater than the length of the linked list', () => {
+    let ll= new LinkedList;
+    ll.insert(1);
+    ll.append(2);
+    ll.append(3);
+    ll.append(4);
+    
+    expect(ll.size).toEqual(3);
+    expect(ll.kthFromEnd(10)).toEqual('out of the range');
+  });
+
+  it('Where k and the length of the list are the same', () => {
+    let ll= new LinkedList;
+    ll.insert(1);
+    ll.append(2);
+    ll.append(3);
+    ll.append(4);
+   
+    expect(ll.size).toEqual(3);
+    expect(ll.kthFromEnd(2)).toEqual(2);
+  });
+
+  it('Where k is not a positive integer', () => {
+    let ll= new LinkedList;
+    ll.insert(1);
+    ll.append(2);
+    ll.append(3);
+    ll.append(4);
+   
+    expect(ll.size).toEqual(3);
+    expect(ll.kthFromEnd(-2)).toEqual('please enter a positive number');
+  });
+
+  it('Where the linked list is of a size 1', () => {
+    let ll= new LinkedList;
+    ll.append(1);
+   
+    expect(ll.size).toEqual(1);
+    expect(ll.kthFromEnd(0)).toEqual(1);
+  });
+
+  it('“Happy Path” where k is not at the end, but somewhere in the middle of the linked list', () => {
+    let ll= new LinkedList;
+    ll.insert(1);
+    ll.append(2);
+    ll.append(3);
+    ll.append(4);
+   
+    expect(ll.size).toEqual(3);
+    expect(ll.kthFromEnd(2)).toEqual(2);
+  });
 });
