@@ -125,6 +125,24 @@ class LinkedList {
         arr[arr.length] = current.value;
         return arr[arr.length - 1 - k];
       }
+
+      zipLists (list1,list2){
+        const margeList = new LinkedList();
+        let currentNode1 = list1.head;
+        let currentNode2 = list2.head;
+        while(currentNode1 || currentNode2){
+          if(currentNode1){
+            margeList.append(currentNode1.value);
+            currentNode1=currentNode1.next;
+          }
+          if(currentNode2){
+            margeList.append(currentNode2.value);
+            currentNode2=currentNode2.next;
+          }
+        }
+        let StringList = margeList.toString();
+        return StringList;
+      }
    
 }
 
