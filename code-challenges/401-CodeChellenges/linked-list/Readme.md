@@ -34,7 +34,7 @@ Create a linked list class with its properties and methods with its tests.
 
 ## White Board Image:
 
-![Whiteboard Image for Code Challenge 8](hhttps://github.com/HaneenKh88/data-structures-and-algorithms/blob/ll-zip/code-challenges/401-CodeChellenges/assests/codechallenge08.png)
+![Whiteboard Image for Code Challenge 8](https://github.com/HaneenKh88/data-structures-and-algorithms/blob/ll-zip/code-challenges/401-CodeChellenges/assests/codechallenge08.png)
 
 
 
