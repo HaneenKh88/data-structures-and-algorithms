@@ -41,7 +41,7 @@ Create a linked list class with its properties and methods with its tests.
 ***********************************************************************************************
 ### Pull Request Link
 
-[LinkedList](https://github.com/HaneenKh88/data-structures-and-algorithms/pull/25)
+[LinkedList](https://github.com/HaneenKh88/data-structures-and-algorithms/pull/24)
 
 ***********************************************************************************************
 
