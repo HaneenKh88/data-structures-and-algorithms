@@ -16,7 +16,7 @@ Create a linked list class with its properties and methods with its tests.
 1. Create Node and Linked List class with 3 methods and its tests.
 2. Because its the more simple and logic for the linked list.
 3. Big O: 
-   - Time: O(1)
+   - Time: O(n)
    - Space: O(n)
 
 
