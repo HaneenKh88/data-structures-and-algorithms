@@ -27,7 +27,7 @@ Write a function called zipLists which takes two linked lists as arguments. Zip 
 
 ## White Board Image:
 
-![Whiteboard Image for Code Challenge8](https://github.com/HaneenKh88/data-structures-and-algorithms/blob/ll-kth-from-end/code-challenges/401-CodeChellenges/assests/whiteboard8.png)
+![Whiteboard Image for Code Challenge7](https://github.com/HaneenKh88/data-structures-and-algorithms/blob/ll-kth-from-end/code-challenges/401-CodeChellenges/assests/whiteboard8.png)
 
 
 ***********************************************************************************************
