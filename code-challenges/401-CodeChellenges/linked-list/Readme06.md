@@ -1,4 +1,4 @@
-# Code Chellenge 8
+# Code Chellenge 6
 
 ### Summery:
 
@@ -7,13 +7,13 @@ Create a linked list class with its properties and methods with its tests.
 
 ### Challenge 
 
-1. Create a Node class contain the value of the node and its next node which is null.
-2. Create linked list class with head value to can be add the nodes to the head of the list and search for the nodes values if its exists or not and get the values as struture string.
-3. Create linked list class with head value to can be add the nodes even any where or after or before to the list and append nodes values struture string.
-4. 
+1. append(value) which adds a new node with the given value to the end of the list.
+2. insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node.
+3. insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node.
+
 
 ### Approach & Efficiency
-1. Create Node and Linked List class with 7 methods and its tests.
+1. Create Node and Linked List class with 3 methods and its tests.
 2. Because its the more simple and logic for the linked list.
 3. Big O: 
    - Time: O(1)
@@ -34,7 +34,7 @@ Create a linked list class with its properties and methods with its tests.
 
 ## White Board Image:
 
-![Whiteboard Image for Code Challenge 8](https://github.com/HaneenKh88/data-structures-and-algorithms/blob/ll-zip/code-challenges/401-CodeChellenges/assests/codechallenge08.png)
+![Whiteboard Image for Code Challenge 6](https://github.com/HaneenKh88/data-structures-and-algorithms/blob/main/code-challenges/401-CodeChellenges/assests/LinkedList.png)
 
 
 
