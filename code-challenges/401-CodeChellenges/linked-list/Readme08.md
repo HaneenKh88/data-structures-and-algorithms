@@ -33,7 +33,7 @@ Write a function called zipLists which takes two linked lists as arguments. Zip 
 ***********************************************************************************************
 ### Pull Request Link
 
-[LinkedList](https://github.com/HaneenKh88/data-structures-and-algorithms/pull/26)
+[LinkedList](https://github.com/HaneenKh88/data-structures-and-algorithms/pull/27)
 
 ***********************************************************************************************
 
