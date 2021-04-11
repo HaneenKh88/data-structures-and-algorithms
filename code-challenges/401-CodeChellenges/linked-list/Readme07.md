@@ -10,7 +10,7 @@ Create a linked list class with its properties and methods with its tests.
 1. method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. 
 
 ### Approach & Efficiency
-1. Create Node and Linked List class with 3 methods and its tests.
+1. Create Node and Linked List class with one method and its tests.
 2. Because its the more simple and logic for the linked list.
 3. Big O: 
    - Time: O(n)
