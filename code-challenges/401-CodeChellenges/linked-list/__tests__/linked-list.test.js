@@ -217,5 +217,39 @@ describe('Testing For Code Chellenge 4 Linked List', () => {
       
       expect(ll.zipLists(list1, list2)).toBe('{1} ->{4} ->{2} ->{5} ->{3} ->{6} ->null');
     });
+
+    it('Should return first list if the second list is empty', () => {
+      let ll= new LinkedList;
+      let list1 = new LinkedList;
+      let list2 = new LinkedList;
+      
+      list1.append('1');
+      list1.append('2');
+      list1.append('3');
+      
+      
+      expect(ll.zipLists(list1, list2)).toBe('{1} ->{2} ->{3} ->null');
+    });
+
+    it('Should return second list if the first list is empty', () => {
+      let ll= new LinkedList;
+      let list1 = new LinkedList;
+      let list2 = new LinkedList;
+      
+      list2.append('4');
+      list2.append('5');
+      list2.append('6');
+      
+      
+      expect(ll.zipLists(list1, list2)).toBe('{4} ->{5} ->{6} ->null');
+    });
+
+
+    it("test in case that the list is empty", () => {
+      let ll= new LinkedList;
+      const ll1 = new LinkedList();
+      const ll2 = new LinkedList();
+      expect(ll.zipLists(ll1, ll2)).toEqual("null");
+    });
 });
 });

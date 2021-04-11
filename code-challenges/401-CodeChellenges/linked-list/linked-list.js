@@ -1,5 +1,7 @@
 'use strict';
 
+const e = require("express");
+
 class Node {
     constructor(value) {
         this.value = value;
@@ -127,6 +129,7 @@ class LinkedList {
       }
 
       zipLists (list1,list2){
+       
         const margeList = new LinkedList();
         let currentNode1 = list1.head;
         let currentNode2 = list2.head;
@@ -139,11 +142,57 @@ class LinkedList {
             margeList.append(currentNode2.value);
             currentNode2=currentNode2.next;
           }
+
         }
         let StringList = margeList.toString();
         return StringList;
       }
-   
+
+    
+    
 }
+
+function reverse(list) {
+  let prev = null;
+  let current = list.head;
+  let nextNode = null;
+  while (current != null) {
+    nextNode = current.next;
+    current.next = prev;
+    prev = current;
+    current = nextNode;
+  }
+  return prev;
+}
+
+function palindrome(list)
+{
+  let strList1 = list.toString();
+  let ll = new LinkedList();
+  ll.head = reverse(list);
+  let strList2 = ll.toString();
+ if(strList1 === strList2)
+ {
+   return true;
+ }
+
+ else
+ return false;
+}
+
+let ll = new LinkedList();
+let ll2 = new LinkedList();
+
+ll.insert('t');
+ll.insert('a');
+ll.insert('c');
+ll.insert('o');
+ll.insert('c');
+ll.insert('a');
+ll.insert('t');
+
+ll2.head = reverse(ll);
+// console.log(ll2.toString());
+console.log(palindrome(ll))
 
 module.exports = LinkedList;
