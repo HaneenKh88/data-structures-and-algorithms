@@ -17,10 +17,10 @@ Create Pseudo Queue class. Do not use an existing Queue. Instead, this Pseudo Qu
 
 ### API
 
-1.Connect Stack class with its methods.
-2.Create Stack class with its methods:
-3.enqueue method which inserts value into the PseudoQueue, using a first-in, first-out approach.
-4.dequeue method which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+1. Connect Stack class with its methods.
+2. Create Stack class with its methods.
+3. Enqueue method which inserts value into the PseudoQueue, using a first-in, first-out approach.
+4. Dequeue method which extracts a value from the PseudoQueue, using a first-in, first-out approach.
 
 
 ***********************************************************************************************
