@@ -12,7 +12,7 @@ Create a Binary Tree class with its properties and methods with its tests.
 3. Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
 
 ### Approach & Efficiency
-1. Create Node and Linked List class with 3 methods and its tests.
+1. Create a Binary Tree class with its properties and methods with its tests.
 2. Because its the more simple and logic for the linked list.
 3. Big O: 
    - Time: O(n)
