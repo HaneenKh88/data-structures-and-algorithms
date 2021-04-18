@@ -80,6 +80,19 @@ describe('Binary Tree', () => {
     expect(tree1.root.right.value).toEqual(8);
 
   });
+ 
+  it('Can successfully get a max value in the tree', () => {
+    // const root = new Node(7);
+    // const tree1 = new BinaryTree(root);
+    
+    expect(tree.findMaximumValue()).toEqual(8);
+  });
 
+  it('Expected to give a null when try to get max value of empty tree', () => {
+    // const root = new Node(7);
+    const tree1 = new BinaryTree();
+    
+    expect(tree1.findMaximumValue()).toEqual('The Tree is empty');
+  });
 
 });
