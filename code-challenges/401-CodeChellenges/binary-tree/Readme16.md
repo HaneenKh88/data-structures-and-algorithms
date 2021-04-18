@@ -1,4 +1,4 @@
-# Code Chellenge 6
+# Code Chellenge 16
 
 ### Summery:
 
@@ -36,7 +36,7 @@ Create a Binary Tree class with its properties and methods with its tests.
 ***********************************************************************************************
 ### White Board Image:
 
-[White Board](https://github.com/HaneenKh88/data-structures-and-algorithms/blob/main/code-challenges/401-CodeChellenges/assests/codechallenge16.png)
+![White Board](https://github.com/HaneenKh88/data-structures-and-algorithms/blob/main/code-challenges/401-CodeChellenges/assests/codechallenge16.png)
 
 - Note: The Space complexity is O(h) I missecd up the letter.
 
