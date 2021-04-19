@@ -107,7 +107,39 @@ class BinaryTree {
     }
     return MaxValue;
   }
- 
+
+  BreadthFirst()
+  {
+    let ResultArr = [];
+    let NewArr = [];
+    let current = this.root;
+
+    if (!this.root) {
+      return 'The Tree is empty';
+    }
+
+    else if(current)
+    {
+      NewArr.push(current);
+
+      while(NewArr.length)
+      {
+        current = NewArr.shift(); 
+        ResultArr.push(current.value);
+        
+        if(current.left)
+        {
+          NewArr.push(current.left);
+        }
+        if(current.right)
+        {
+          NewArr.push(current.right);
+        }
+      }
+      return ResultArr;
+    }
+  }
+
 }
 
 

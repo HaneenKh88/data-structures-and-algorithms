@@ -38,18 +38,25 @@ describe('Binary Tree', () => {
     expect(postOrder).toEqual(expected);
   });
 
+  it('Can successfully sort the tree in Breadth First order', () => {
+
+    const expected = [1, 2, 3, 4, 5, 6, 7, 8];
+    const result = tree.BreadthFirst();
+    expect(result).toEqual(expected);
+  });
+
   it('Add', () => {
     const expected = [4, 8, 5, 2, 6, 7, 3, 1];
-     tree.add(9);
+    tree.add(9);
     expect(expected.length).toEqual(8);
-   
+
 
   });
 
   it('contains', () => {
     // const expected = [4, 8, 5, 2, 6, 7, 3, 1];
     //  tree.add(9);
-     expect(tree.contains(7)).toBeTruthy();
+    expect(tree.contains(7)).toBeTruthy();
 
   });
 
@@ -62,7 +69,7 @@ describe('Binary Tree', () => {
   it('Can successfully instantiate a tree with a single root node', () => {
     const root = new Node(7);
     const tree1 = new BinaryTree(root);
-    
+
     expect(tree1.root.value).toEqual(7);
   });
 
@@ -80,19 +87,27 @@ describe('Binary Tree', () => {
     expect(tree1.root.right.value).toEqual(8);
 
   });
- 
+
   it('Can successfully get a max value in the tree', () => {
     // const root = new Node(7);
     // const tree1 = new BinaryTree(root);
-    
+
     expect(tree.findMaximumValue()).toEqual(8);
   });
 
   it('Expected to give a null when try to get max value of empty tree', () => {
     // const root = new Node(7);
     const tree1 = new BinaryTree();
-    
+
     expect(tree1.findMaximumValue()).toEqual('The Tree is empty');
+  });
+
+  
+  it('Expected to give a null when try to get max value of empty tree', () => {
+    // const root = new Node(7);
+    const tree1 = new BinaryTree();
+
+    expect(tree1.BreadthFirst()).toEqual('The Tree is empty');
   });
 
 });
