@@ -140,6 +140,42 @@ class BinaryTree {
     }
   }
 
+
+  // FizzBuzzTree(tree)
+  // {
+    
+  //   const _traverse = (node) => {
+  //     let current = node.value;
+  //   if(!this.root) {
+  //     return 'The Tree is empty';
+  //   }
+
+  //     if(current % 3 === 0)
+  //     {
+  //       current = 'Fizz';
+  //     }
+
+  //     else if(current % 5 === 0)
+  //     {
+  //       current = 'Buzz';
+  //     }
+
+  //     else if(current % 3 === 0 && current % 5 === 0)
+  //     {
+  //       current = 'FizzBuzz';
+  //     }
+  //     else
+  //     {
+  //       current = `${current}`
+  //     }
+    
+  //     if (node.left) _traverse(node.left);
+  //     if (node.right) _traverse(node.right);
+  
+  //   _traverse(tree.root);
+   
+  //   };
+  // }
 }
 
 
