@@ -1,6 +1,6 @@
 'use strict';
 
-const Mergesort = (arr) =>
+const InsertionSort = (arr) =>
 {
     for (let i = 0; i < arr.length; i++) {
         let j = i-1;
