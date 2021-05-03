@@ -1,69 +1,69 @@
-// 'use strict';
+'use strict';
 
-// /* ------------------------------------------------------------------------------------------------
+/* ------------------------------------------------------------------------------------------------
 
-// CHALLENGE 1 - Review
+CHALLENGE 1 - Review
 
-// Use the characters data below for all of the challenges except challenge 2 and 3.
+Use the characters data below for all of the challenges except challenge 2 and 3.
 
-// Write a function named sortByChildren that sorts the characters below by the number of children 
-// in each house (fewest to most). If a house has the same number of children, sort alphabetically
-//  by house name.
+Write a function named sortByChildren that sorts the characters below by the number of children 
+in each house (fewest to most). If a house has the same number of children, sort alphabetically
+ by house name.
 
-// ------------------------------------------------------------------------------------------------ */
-// let characters = [
-//   {
-//     name: 'Eddard',
-//     spouse: 'Catelyn',
-//     children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
-//     house: 'Stark'
-//   },
-//   {
-//     name: 'Jon A.',
-//     spouse: 'Lysa',
-//     children: ['Robin'],
-//     house: 'Arryn'
-//   },
-//   {
-//     name: 'Cersei',
-//     spouse: 'Robert',
-//     children: ['Joffrey', 'Myrcella', 'Tommen'],
-//     house: 'Lannister'
-//   },
-//   {
-//     name: 'Daenarys',
-//     spouse: 'Khal Drogo',
-//     children: ['Drogon', 'Rhaegal', 'Viserion'],
-//     house: 'Targaryen'
-//   },
-//   {
-//     name: 'Mace',
-//     spouse: 'Alerie',
-//     children: ['Margaery', 'Loras'],
-//     house: 'Tyrell'
-//   },
-//   {
-//     name: 'Euron',
-//     spouse: null,
-//     children: [],
-//     house: 'Greyjoy'
-//   },
-//   {
-//     name: 'Jon S.',
-//     spouse: null,
-//     children: [],
-//     house: 'Snow'
-//   }
-// ];
+------------------------------------------------------------------------------------------------ */
+let characters = [
+  {
+    name: 'Eddard',
+    spouse: 'Catelyn',
+    children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
+    house: 'Stark'
+  },
+  {
+    name: 'Jon A.',
+    spouse: 'Lysa',
+    children: ['Robin'],
+    house: 'Arryn'
+  },
+  {
+    name: 'Cersei',
+    spouse: 'Robert',
+    children: ['Joffrey', 'Myrcella', 'Tommen'],
+    house: 'Lannister'
+  },
+  {
+    name: 'Daenarys',
+    spouse: 'Khal Drogo',
+    children: ['Drogon', 'Rhaegal', 'Viserion'],
+    house: 'Targaryen'
+  },
+  {
+    name: 'Mace',
+    spouse: 'Alerie',
+    children: ['Margaery', 'Loras'],
+    house: 'Tyrell'
+  },
+  {
+    name: 'Euron',
+    spouse: null,
+    children: [],
+    house: 'Greyjoy'
+  },
+  {
+    name: 'Jon S.',
+    spouse: null,
+    children: [],
+    house: 'Snow'
+  }
+];
 
-// const sortByChildren = (charArray) => {
-//   // Solution code here...
-//   charArray.sort((a,b) =>
-//   {
-//     return a.children.length - b.children.length;
-//   })
-//   return charArray;
-// };
+const sortByChildren = (charArray) => {
+  // Solution code here...
+  charArray.sort((a,b) =>
+  {
+    return a.children.length - b.children.length;
+  })
+  return charArray;
+};
 
 // /* ------------------------------------------------------------------------------------------------
 // CHALLENGE 2
@@ -256,12 +256,12 @@
 
 // ------------------------------------------------------------------------------------------------ */
 
-// describe('Testing challenge 1', () => {
-//   test('It should sort the characters by number of children', () => {
-//     expect(sortByChildren(characters)[0].name).toStrictEqual('Euron');
-//     expect(sortByChildren(characters)[0].children.length).toStrictEqual(0);
-//   });
-// });
+describe('Testing challenge 1', () => {
+  test('It should sort the characters by number of children', () => {
+    expect(sortByChildren(characters)[0].name).toStrictEqual('Euron');
+    expect(sortByChildren(characters)[0].children.length).toStrictEqual(0);
+  });
+});
 
 // describe('Testing challenge 2', () => {
 //   test('It should return the keys from an object', () => {
