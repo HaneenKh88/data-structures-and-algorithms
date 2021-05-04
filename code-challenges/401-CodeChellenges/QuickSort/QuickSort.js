@@ -1,69 +1,51 @@
-'use strict';
 
-function Mergesort (arr) 
+function QuickSort (arr, left, right) 
 {
-   let n = arr.length;
-
-   if (n > 1)
-   {
-    let mid = Math.floor(arr.length / 2);
-    let left = [];
-    let right = [];
-
-    for (let i = 0; i < mid; i++)
-    {
-      left.push(arr[i]);
-    } 
-    for (let i = mid; i < arr.length; i++) 
-    {
-      right.push(arr[i]);
-    }
-    Mergesort(left);
-    Mergesort(right);
-    Merge(left, right, arr);
-   }
-  
-   return arr;
  
+ 
+    if (left >= right) return;
+        
+        let position = Partition(arr, left, right)
+        
+        QuickSort(arr, left, position - 1)
+
+        QuickSort(arr, position + 1, right)
 }
 
-function Merge(left, right, arr)
+
+function Partition(arr, left, right)
 {
-  let i = 0;
-  let j = 0;
-  let k = 0;
-
-   while (i < left.length && j < right.length) {
-    if (left[i] <= right[j])
+ 
+    let pivot = arr[right]
+   
+    let low = left - 1;
+    for( let i = left; i<= right; i++)
     {
-     arr[k] = left[i];
-      i = i + 1;
-    } 
-    else
-    {
-      arr[k] = right[j];
-       j = j + 1;
-    } 
+      if (arr[i] <= pivot)
+      {
+      
+      Swap(arr, i, ++low)
+      }
+      
+    }
+     return low;  
 
-     k = k + 1
+    
   }
-  if (i < left.length)
-  {
-   arr[k++] = left[i++];
-  }
-  else 
-  {
-   arr[k++] = right[j++];
-  }
-  return arr;
+function Swap(arr, i, low)
+{
+    let temp;
+    temp = arr[i];
+    arr[i] = arr[low];
+    arr[low] = temp;
 
 
 }
 
-let arr = [8,4,23,42,16,15]
+let arr = [8, 4, 23, 42, 16, 15];
+QuickSort(arr, 0, arr.length - 1);
+console.log(arr);
 
-console.log(Mergesort(arr));
-   
 
 
-module.exports = Mergesort;
+module.exports = QuickSort;
