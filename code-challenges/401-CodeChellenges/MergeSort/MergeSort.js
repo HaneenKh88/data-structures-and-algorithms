@@ -1,5 +1,7 @@
 'use strict';
 
+'use strict';
+
 function Mergesort (arr) 
 {
    let n = arr.length;
