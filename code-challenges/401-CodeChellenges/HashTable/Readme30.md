@@ -1,12 +1,14 @@
-# Code Chellenge 26
+# Code Chellenge 30
 
 ### Summery:
 
-Create class for node, Linked list and Hashtree with its methods.
+#### Hash Table:
+
+data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found. During lookup, the key is hashed and the resulting hash indicates where the corresponding value is stored.
 
 ### Challenge 
 
-Create class for node, Linked list and Hashtree with its methods.
+Create class for node, Linked list and Hashtree with its methods (Hash method, Add method, Get method, Contain Method).
 
 
 ### Approach & Efficiency
