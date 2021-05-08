@@ -41,9 +41,7 @@ class HashTable {
       if(this.table[hash].head)
       {
         let current = this.table[hash].head;
-        
-      
-      let OBJkey = Object.keys(current.value)
+        let OBJkey = Object.keys(current.value)
       if(OBJkey[0] === key)
       {
         return current.value[key];
@@ -59,7 +57,11 @@ class HashTable {
       }
       }
     }
+
+    else
+    {
     return 'not found';
+    }
   
   }
   
