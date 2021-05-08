@@ -50,7 +50,7 @@ Create class for node, Linked list and Hashtree with its methods (Hash method, A
 ***********************************************************************************************
 ### Pull Request Link
 
-[Insertion Sort](https://github.com/HaneenKh88/data-structures-and-algorithms/pull/41)
+[Hash Table](https://github.com/HaneenKh88/data-structures-and-algorithms/pull/42)
 
 
 ***********************************************************************************************
