@@ -57,6 +57,7 @@ describe('Hash Table testing', () => {
         Hash.add("two", "haneen");
         expect(Hash.get("one")).toEqual("haneen");
         expect(Hash.get("two")).toEqual("haneen");
+        
     });
 
     

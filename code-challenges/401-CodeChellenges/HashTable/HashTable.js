@@ -2,15 +2,13 @@
 const LinkedList = require('../linked-list/linked-list')
 
 class HashTable {
-  constructor(size)
-  {
+  constructor(size) {
     this.table = new Array(size);
   }
- 
+
 
   hash(key) {
-    let HashStr = key.split('').reduce((HashKey,value) =>
-    {
+    let HashStr = key.split('').reduce((HashKey, value) => {
       let result = HashKey + value.charCodeAt(0);
       return result;
     }, 0)
@@ -27,54 +25,50 @@ class HashTable {
       this.table[hash] = new LinkedList();//LL
     }
 
-    this.table[hash].append({[key]: value});
+    this.table[hash].insert({ [key]: value });
   }
 
-  
+
 
   get(key) {
     // return value;
     let hash = this.hash(key);
 
-    if(this.contains(key))
-    {
-      if(this.table[hash].head)
-      {
+    if (this.contains(key)) {
+      if (this.table[hash].head) {
         let current = this.table[hash].head;
         let OBJkey = Object.keys(current.value)
-      if(OBJkey[0] === key)
-      {
-        return current.value[key];
-      }
-
-      while (current.next)
-      {
-        current = current.next;
-        if(OBJkey[0] === key)
-        {
+        if (OBJkey[0] === key) {
           return current.value[key];
         }
-      }
+
+        while (current.next) {
+          current = current.next;
+          if (OBJkey[0] === key) {
+            return current.value[key];
+          }
+        }
       }
     }
 
-    else
-    {
-    return 'not found';
+    else {
+      return 'not found';
     }
-  
+
   }
-  
+
 
   contains(key) {
     // return Boolean;
     let hash = this.hash(key);
-    if(this.table[hash])
-    return true;
+    if (this.table[hash])
+      return true;
 
     else
-    return false;
+      return false;
   }
-  }
+}
+
+
 
 module.exports = HashTable;
