@@ -20,7 +20,7 @@ function that return a set of values found in both trees.
 
 ### API
 
-1.Take the two array based on specific order.
+1. Take the two array based on specific order.
 2. check if the nodes are dublicated in the two array.
 3. return the duplicated nodes.
 
