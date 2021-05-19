@@ -48,6 +48,8 @@ class LinkedList {
 
         return false;
 
+      
+
     }
 
     toString() {
@@ -61,6 +63,8 @@ class LinkedList {
         }
         StringValues += 'null';
         return StringValues;
+
+     
     }
 
     append(value) {
@@ -78,6 +82,8 @@ class LinkedList {
           current.next = new Node(value);
           this.size++;
           return this.head;
+
+        
     }
 
     insertBefore(value, newVal) {
