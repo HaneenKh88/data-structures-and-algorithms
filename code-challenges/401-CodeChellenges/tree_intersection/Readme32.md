@@ -27,7 +27,7 @@ function that return a set of values found in both trees.
 ***********************************************************************************************
 ### Pull Request Link
 
-[tree intersection](https://github.com/HaneenKh88/data-structures-and-algorithms/pull/44)
+[tree intersection](https://github.com/HaneenKh88/data-structures-and-algorithms/pull/47)
 
 ***********************************************************************************************
 
