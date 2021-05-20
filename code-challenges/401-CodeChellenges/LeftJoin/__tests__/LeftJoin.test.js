@@ -22,7 +22,7 @@ describe('Testing For Code Chellenge 1', () => {
 
    
 
-    expect(LeftJoin(left, right)).toStrictEqual([["wrath", "anger", "delight"], ["diligent", "employed", "idle"], ["outfit", "garb", "not found"], ["guide", "usher", "follow"], ["fond", "enamored", "averse"]]);
+    expect(LeftJoin(left, right)).toStrictEqual([["wrath", "anger", "delight"], ["diligent", "employed", "idle"], ["outfit", "garb", null], ["guide", "usher", "follow"], ["fond", "enamored", "averse"]]);
 
   });
 

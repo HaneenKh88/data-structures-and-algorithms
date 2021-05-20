@@ -30,7 +30,7 @@ describe('Hash Table testing', () => {
         let Hash = new HashTable(100);
         // Hash.add("one", "haneen");
         // let HashTable = new HashTable(100);
-        expect(Hash.get("two")).toEqual('not found');
+        expect(Hash.get("two")).toEqual(null);
     });
 
     it('Successfully handle a collision within the hashtable', () => {
@@ -47,7 +47,7 @@ describe('Hash Table testing', () => {
         let Hash = new HashTable(100);
         Hash.add("one", "haneen");
         expect(Hash.contains('one')).toBeTruthy();
-        expect(Hash.contains('not found')).toBeFalsy();
+        expect(Hash.contains(null)).toBeFalsy();
 
     });
 
