@@ -52,7 +52,7 @@ class HashTable {
     }
 
     else {
-      return 'not found';
+      return null;
     }
 
   }
